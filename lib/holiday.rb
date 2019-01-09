@@ -43,7 +43,7 @@ def all_holidays_with_bbq(holiday_hash)
       value if value.include?("BBQ")
     }
   }
-  .flatten
+  .flatten.delete_if 
 end
 
 
