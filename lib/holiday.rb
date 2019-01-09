@@ -44,6 +44,7 @@ def all_holidays_with_bbq(holiday_hash)
     }
   }
   .flatten
+  .delete_if {|x| x == nil}
 end
 
 
