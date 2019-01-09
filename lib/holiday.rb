@@ -40,7 +40,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.collect { |key, value|
     value.collect { |key, value|
-      value if value.include?("BBQ")
+      key if value.include?("BBQ")
     }
   }
   .flatten
